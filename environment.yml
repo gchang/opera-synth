@@ -1,0 +1,22 @@
+name: synth-env
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.11
+  - pip>=21.3
+  - git
+  - rasterio
+  - h5py
+  - jax
+  - numpy
+  - pydantic
+  - scipy
+  - tqdm
+  # For Jupyter UI
+  - jupyter
+  - ipywidgets
+  - ipyleaflet
+  - matplotlib-base
+  - cmcrameri
+  - pip:
+    - troposim

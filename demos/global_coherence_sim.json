@@ -1,0 +1,31 @@
+{
+  "output_dir": "global_coherence",
+  "bounding_box": [
+    -117.914329,
+    34.928881,
+    -117.562766,
+    35.198859
+  ],
+  "start_date": "2020-01-01T00:00:00",
+  "dt": 12,
+  "num_dates": 30,
+  "res_y": 15.0,
+  "res_x": 15.0,
+  "include_turbulence": true,
+  "max_turbulence_amplitude": 5.0,
+  "include_deformation": true,
+  "max_defo_amplitude": 10.0,
+  "include_ramps": true,
+  "max_ramp_amplitude": 1.0,
+  "include_stratified": false,
+  "rho_transform": "shrunk",
+  "include_summed_truth": true,
+  "multilook_truth": [
+    2,
+    2
+  ],
+  "block_shape": [
+    128,
+    128
+  ]
+}

@@ -1,0 +1,180 @@
+[build-system]
+requires = ["setuptools>=64.0", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "synth-insar"
+authors = [
+  { name = "Scott Staniewicz", email = "scott.j.staniewicz@jpl.nasa.gov" },
+]
+description = "Synthetic data generator for InSAR time series analysis"
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.11"
+
+classifiers = [
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python",
+  "Topic :: Scientific/Engineering",
+  "Typing :: Typed",
+]
+license = { file = "LICENSE.txt" }
+
+# The version will be written into a version.py upon install, auto-generated
+# see section: setuptools_scm
+# https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html#dynamic-metadata
+# dependencies will be read from text files
+dynamic = ["version", "optional-dependencies"]
+dependencies = [
+  "troposim>=0.2.1",
+  "rasterio>=1.4.3,<2",
+  "h5py>=3.10.0",
+  "jax>=0.6.0",
+  "numpy>=2.0",
+  "pydantic>=2.6",
+  "pyproj>=3",
+  "scipy>=1.13.0",
+  "tqdm>=4.65",
+]
+
+[project.urls]
+Homepage = "https://github.com/isce-framework/synth"
+"Bug Tracker" = "https://github.com/isce-framework/synth/issues"
+Discussions = "https://github.com/isce-framework/synth/discussions"
+Changelog = "https://github.com/isce-framework/synth/releases"
+
+# Entry points for the command line interface
+[project.scripts]
+synth-compare = "synth.compare:main"
+synth-run = "synth.cli:run"
+
+[tool.pixi.project]
+channels = ["conda-forge"]
+platforms = ["osx-arm64", "linux-64"]
+
+[tool.pixi.pypi-dependencies]
+synth-insar = { path = ".", editable = true }
+
+[tool.pixi.dependencies]
+python = ">=3.11,<3.14"
+pip = ">=21.3"
+git = "*"
+rasterio = ">=1.4.3,<2"
+h5py = ">=3.10.0"
+jax = ">=0.6.0"
+numpy = ">=2.0"
+pydantic = ">=2.6"
+pyproj = ">=3"
+scipy = ">=1.13.0"
+tqdm = ">=4.65"
+
+[tool.pixi.tasks]
+check = "pre-commit run -a"
+test = "pytest"
+docs = "mkdocs serve"
+
+
+[tool.pixi.feature.test.dependencies]
+pre-commit = "*"
+pytest = "*"
+pytest-cov = "*"
+ruff = "*"
+matplotlib = ">=3.10.3"
+pandas = "*"
+ipython = ">=9.3.0"
+
+[tool.pixi.feature.plot.dependencies]
+jupyter = "*"
+ipywidgets = "*"
+ipyleaflet = "*"
+matplotlib-base = "*"
+pandas = "*"
+cmcrameri = "*"
+
+
+[tool.pixi.environments]
+test = ["test"]
+plot = ["plot"]
+
+[tool.setuptools_scm]
+# https://github.com/pypa/setuptools_scm#configuration-parameters
+write_to = "src/synth/_version.py"
+# https://github.com/pypa/setuptools_scm#version-number-construction
+version_scheme = "no-guess-dev" # Will not guess the next version
+
+[tool.ruff]
+src = ["src"]       # For known-first-party imports
+unsafe-fixes = true
+
+[tool.ruff.lint]
+select = [
+  "A",   # flake8-builtins
+  "ARG", # flake8-unused-arguments
+  "B",   # flake8-bugbear
+  "C4",  # flake8-comprehensions
+  "D",   # pydocstyle
+  "E",   # pycodestyle (errors)
+  "W",   # pycodestyle (warnings)
+  # "EM",  # flake8-errmsg
+  "EXE", # flake8-executable
+  "F",   # Pyflakes
+  "I",   # isort
+  "ISC", # flake8-implicit-str-concat
+  "N",   # pep8-naming
+  "PGH", # pygrep-hooks
+  "PIE", # flake8-pie
+  "PL",  # Pylint
+  # "PT",  # flake8-pytest-style
+  "PTH", # flake8-use-pathlib
+  "PYI", # flake8-pyi
+  "RUF", # Ruff-specific rules
+  "SIM", # flake8-simplify
+  "TRY", # tryceratops
+  "UP",  # pyupgrade
+  "YTT", # flake8-2020
+]
+
+ignore = [
+  "D100",   # Missing docstring in public module
+  "D104",   # Missing docstring in public package
+  "D105",   # Missing docstring in magic method
+  "D203",   # 1 blank line required before class docstring
+  "D213",   # Multi-line docstring summary should start at the second line
+  "N802",   # Function name should be lowercase
+  "N803",   # Argument name should be lowercase
+  "N806",   # Variable _ in function should be lowercase
+  "N815",   # Variable `seasonal_A` in class scope should not be mixedCase
+  "PIE796", # Non-unique values are redundant and likely a mistake.
+  "PLR",    # Pylint Refactor
+  "PTH123", # `open()` should be replaced by `Path.open()`
+  "PTH207", # "Replace `glob` with `Path.glob` or `Path.rglob`
+  "ISC001", # The following rules may cause conflicts when used with the formatter
+  "RUF002", # Docstring contains ambiguous unicode characters (preserve Greek letters)
+  "RUF003", # Comment contains ambiguous unicode characters (preserve Greek letters)
+  "TRY003", # Avoid specifying long messages outside the exception
+]
+
+
+[tool.ruff.lint.per-file-ignores]
+"**/__init__.py" = ["F403"]
+"tests/**" = ["D", "N", "PTH"]
+"notebooks/**" = ["D", "E501", "F821", "ARG001", "PLW0603"]
+"*.py" = ["D417"]                                           # Missing argument descriptions in docstrings
+
+[tool.ruff.lint.flake8-unused-arguments]
+# Whether to allow unused variadic arguments, like *args and **kwargs.
+ignore-variadic-names = true
+
+
+[tool.mypy]
+python_version = "3.12"
+ignore_missing_imports = true
+
+
+[tool.pytest.ini_options]
+doctest_optionflags = "NORMALIZE_WHITESPACE NUMBER"
+addopts = " --ignore=docs "

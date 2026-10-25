@@ -1,0 +1,710 @@
+[
+    {
+        "name": "CRLB",
+        "file_list": [
+            "slcs/20200101.crlb.tif",
+            "slcs/20200113.crlb.tif",
+            "slcs/20200125.crlb.tif",
+            "slcs/20200206.crlb.tif",
+            "slcs/20200218.crlb.tif",
+            "slcs/20200301.crlb.tif",
+            "slcs/20200313.crlb.tif",
+            "slcs/20200325.crlb.tif",
+            "slcs/20200406.crlb.tif",
+            "slcs/20200418.crlb.tif",
+            "slcs/20200430.crlb.tif",
+            "slcs/20200512.crlb.tif",
+            "slcs/20200524.crlb.tif",
+            "slcs/20200605.crlb.tif",
+            "slcs/20200617.crlb.tif",
+            "slcs/20200629.crlb.tif",
+            "slcs/20200711.crlb.tif",
+            "slcs/20200723.crlb.tif",
+            "slcs/20200804.crlb.tif",
+            "slcs/20200816.crlb.tif",
+            "slcs/20200828.crlb.tif",
+            "slcs/20200909.crlb.tif",
+            "slcs/20200921.crlb.tif",
+            "slcs/20201003.crlb.tif",
+            "slcs/20201015.crlb.tif",
+            "slcs/20201027.crlb.tif",
+            "slcs/20201108.crlb.tif",
+            "slcs/20201120.crlb.tif",
+            "slcs/20201202.crlb.tif",
+            "slcs/20201214.crlb.tif"
+        ],
+        "mask_file_list": [],
+        "nodata": null,
+        "uses_spatial_ref": false,
+        "algorithm": null,
+        "mask_min_value": 0.1,
+        "bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "latlon_bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "x_values": [
+            "20200101",
+            "20200113",
+            "20200125",
+            "20200206",
+            "20200218",
+            "20200301",
+            "20200313",
+            "20200325",
+            "20200406",
+            "20200418",
+            "20200430",
+            "20200512",
+            "20200524",
+            "20200605",
+            "20200617",
+            "20200629",
+            "20200711",
+            "20200723",
+            "20200804",
+            "20200816",
+            "20200828",
+            "20200909",
+            "20200921",
+            "20201003",
+            "20201015",
+            "20201027",
+            "20201108",
+            "20201120",
+            "20201202",
+            "20201214"
+        ]
+    },
+    {
+        "name": "rho_max",
+        "file_list": [
+            "input_layers/rho_max.tif"
+        ],
+        "mask_file_list": [],
+        "nodata": null,
+        "uses_spatial_ref": false,
+        "algorithm": null,
+        "mask_min_value": 0.1,
+        "bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "latlon_bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "x_values": [
+            ""
+        ]
+    },
+    {
+        "name": "amp_mean",
+        "file_list": [
+            "input_layers/amp_mean.tif"
+        ],
+        "mask_file_list": [],
+        "nodata": null,
+        "uses_spatial_ref": false,
+        "algorithm": null,
+        "mask_min_value": 0.1,
+        "bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "latlon_bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "x_values": [
+            ""
+        ]
+    },
+    {
+        "name": "amp_fall",
+        "file_list": [
+            "input_layers/amp_fall.tif"
+        ],
+        "mask_file_list": [],
+        "nodata": null,
+        "uses_spatial_ref": false,
+        "algorithm": null,
+        "mask_min_value": 0.1,
+        "bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "latlon_bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "x_values": [
+            ""
+        ]
+    },
+    {
+        "name": "amp_mean",
+        "file_list": [
+            "input_layers/amp_mean.tif"
+        ],
+        "mask_file_list": [],
+        "nodata": null,
+        "uses_spatial_ref": false,
+        "algorithm": null,
+        "mask_min_value": 0.1,
+        "bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "latlon_bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "x_values": [
+            ""
+        ]
+    },
+    {
+        "name": "amp_spring",
+        "file_list": [
+            "input_layers/amp_spring.tif"
+        ],
+        "mask_file_list": [],
+        "nodata": null,
+        "uses_spatial_ref": false,
+        "algorithm": null,
+        "mask_min_value": 0.1,
+        "bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "latlon_bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "x_values": [
+            ""
+        ]
+    },
+    {
+        "name": "amp_summer",
+        "file_list": [
+            "input_layers/amp_summer.tif"
+        ],
+        "mask_file_list": [],
+        "nodata": null,
+        "uses_spatial_ref": false,
+        "algorithm": null,
+        "mask_min_value": 0.1,
+        "bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "latlon_bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "x_values": [
+            ""
+        ]
+    },
+    {
+        "name": "amp_winter",
+        "file_list": [
+            "input_layers/amp_winter.tif"
+        ],
+        "mask_file_list": [],
+        "nodata": null,
+        "uses_spatial_ref": false,
+        "algorithm": null,
+        "mask_min_value": 0.1,
+        "bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "latlon_bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "x_values": [
+            ""
+        ]
+    },
+    {
+        "name": "rho_mean",
+        "file_list": [
+            "input_layers/rho_mean.tif"
+        ],
+        "mask_file_list": [],
+        "nodata": null,
+        "uses_spatial_ref": false,
+        "algorithm": null,
+        "mask_min_value": 0.1,
+        "bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "latlon_bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "x_values": [
+            ""
+        ]
+    },
+    {
+        "name": "rho_fall",
+        "file_list": [
+            "input_layers/rho_fall.tif"
+        ],
+        "mask_file_list": [],
+        "nodata": null,
+        "uses_spatial_ref": false,
+        "algorithm": null,
+        "mask_min_value": 0.1,
+        "bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "latlon_bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "x_values": [
+            ""
+        ]
+    },
+    {
+        "name": "rho_max",
+        "file_list": [
+            "input_layers/rho_max.tif"
+        ],
+        "mask_file_list": [],
+        "nodata": null,
+        "uses_spatial_ref": false,
+        "algorithm": null,
+        "mask_min_value": 0.1,
+        "bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "latlon_bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "x_values": [
+            ""
+        ]
+    },
+    {
+        "name": "rho_min",
+        "file_list": [
+            "input_layers/rho_min.tif"
+        ],
+        "mask_file_list": [],
+        "nodata": null,
+        "uses_spatial_ref": false,
+        "algorithm": null,
+        "mask_min_value": 0.1,
+        "bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "latlon_bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "x_values": [
+            ""
+        ]
+    },
+    {
+        "name": "rho_ptp",
+        "file_list": [
+            "input_layers/rho_ptp.tif"
+        ],
+        "mask_file_list": [],
+        "nodata": null,
+        "uses_spatial_ref": false,
+        "algorithm": null,
+        "mask_min_value": 0.1,
+        "bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "latlon_bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "x_values": [
+            ""
+        ]
+    },
+    {
+        "name": "rho_shrunk",
+        "file_list": [
+            "input_layers/rho_shrunk.tif"
+        ],
+        "mask_file_list": [],
+        "nodata": null,
+        "uses_spatial_ref": false,
+        "algorithm": null,
+        "mask_min_value": 0.1,
+        "bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "latlon_bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "x_values": [
+            ""
+        ]
+    },
+    {
+        "name": "rho_spring",
+        "file_list": [
+            "input_layers/rho_spring.tif"
+        ],
+        "mask_file_list": [],
+        "nodata": null,
+        "uses_spatial_ref": false,
+        "algorithm": null,
+        "mask_min_value": 0.1,
+        "bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "latlon_bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "x_values": [
+            ""
+        ]
+    },
+    {
+        "name": "rho_summer",
+        "file_list": [
+            "input_layers/rho_summer.tif"
+        ],
+        "mask_file_list": [],
+        "nodata": null,
+        "uses_spatial_ref": false,
+        "algorithm": null,
+        "mask_min_value": 0.1,
+        "bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "latlon_bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "x_values": [
+            ""
+        ]
+    },
+    {
+        "name": "rho_winter",
+        "file_list": [
+            "input_layers/rho_winter.tif"
+        ],
+        "mask_file_list": [],
+        "nodata": null,
+        "uses_spatial_ref": false,
+        "algorithm": null,
+        "mask_min_value": 0.1,
+        "bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "latlon_bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "x_values": [
+            ""
+        ]
+    },
+    {
+        "name": "seasonal_A",
+        "file_list": [
+            "input_layers/seasonal_A.tif"
+        ],
+        "mask_file_list": [],
+        "nodata": null,
+        "uses_spatial_ref": false,
+        "algorithm": null,
+        "mask_min_value": 0.1,
+        "bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "latlon_bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "x_values": [
+            ""
+        ]
+    },
+    {
+        "name": "seasonal_B",
+        "file_list": [
+            "input_layers/seasonal_B.tif"
+        ],
+        "mask_file_list": [],
+        "nodata": null,
+        "uses_spatial_ref": false,
+        "algorithm": null,
+        "mask_min_value": 0.1,
+        "bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "latlon_bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "x_values": [
+            ""
+        ]
+    },
+    {
+        "name": "seasonal_mask",
+        "file_list": [
+            "input_layers/seasonal_mask.tif"
+        ],
+        "mask_file_list": [],
+        "nodata": null,
+        "uses_spatial_ref": false,
+        "algorithm": null,
+        "mask_min_value": 0.1,
+        "bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "latlon_bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "x_values": [
+            ""
+        ]
+    },
+    {
+        "name": "tau_fall",
+        "file_list": [
+            "input_layers/tau_fall.tif"
+        ],
+        "mask_file_list": [],
+        "nodata": null,
+        "uses_spatial_ref": false,
+        "algorithm": null,
+        "mask_min_value": 0.1,
+        "bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "latlon_bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "x_values": [
+            ""
+        ]
+    },
+    {
+        "name": "tau_mean",
+        "file_list": [
+            "input_layers/tau_mean.tif"
+        ],
+        "mask_file_list": [],
+        "nodata": null,
+        "uses_spatial_ref": false,
+        "algorithm": null,
+        "mask_min_value": 0.1,
+        "bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "latlon_bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "x_values": [
+            ""
+        ]
+    },
+    {
+        "name": "tau_spring",
+        "file_list": [
+            "input_layers/tau_spring.tif"
+        ],
+        "mask_file_list": [],
+        "nodata": null,
+        "uses_spatial_ref": false,
+        "algorithm": null,
+        "mask_min_value": 0.1,
+        "bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "latlon_bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "x_values": [
+            ""
+        ]
+    },
+    {
+        "name": "tau_summer",
+        "file_list": [
+            "input_layers/tau_summer.tif"
+        ],
+        "mask_file_list": [],
+        "nodata": null,
+        "uses_spatial_ref": false,
+        "algorithm": null,
+        "mask_min_value": 0.1,
+        "bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "latlon_bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "x_values": [
+            ""
+        ]
+    },
+    {
+        "name": "tau_winter",
+        "file_list": [
+            "input_layers/tau_winter.tif"
+        ],
+        "mask_file_list": [],
+        "nodata": null,
+        "uses_spatial_ref": false,
+        "algorithm": null,
+        "mask_min_value": 0.1,
+        "bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "latlon_bounds": [
+            -117.91432899999998,
+            34.928881,
+            -117.56276599999998,
+            35.198859
+        ],
+        "x_values": [
+            ""
+        ]
+    }
+]

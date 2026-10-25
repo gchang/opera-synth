@@ -42,6 +42,11 @@ The propagation phases are also saved as 3D data cubes in HDF5 files.
 
 Note that the "truth" phase sources include tropospheric noise and phase ramps. One common use is to compare [phase linking algorithms](https://github.com/isce-framework/dolphin), which estimate a wrapped phase time series; in this case, the desired outputs include all "propagation phases".
 
+## Install
+
+With [pixi](https://pixi.sh): `pixi install`, then `pixi run synth-run -f <config.json>`. With conda: `conda env create -f environment.yml`, `conda activate synth-env`, `pip install -e .`.
+The global coherence mode runs GDAL's `gdal_calc` command-line tool, which both routes install (conda-forge `gdal`); a plain `pip install synth-insar` does not provide it.
+
 ## Propagation phase sources
 
 ### Tropospheric Turbulence

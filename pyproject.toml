@@ -64,6 +64,8 @@ python = ">=3.11,<3.14"
 pip = ">=21.3"
 git = "*"
 rasterio = ">=1.4.3,<2"
+# The gdal_calc command-line tool is used by the global coherence mode
+gdal = ">=3.10.3,<4"
 h5py = ">=3.10.0"
 jax = ">=0.6.0"
 numpy = ">=2.0"

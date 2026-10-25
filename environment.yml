@@ -6,6 +6,7 @@ dependencies:
   - pip>=21.3
   - git
   - rasterio
+  - gdal  # gdal_calc, used by the global coherence mode
   - h5py
   - jax
   - numpy
